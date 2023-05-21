@@ -1,10 +1,22 @@
-@media (max-width: 991px) {
-  .header {
-    padding: 2%;
+@media (max-width: 1200px) {
+  .advantages {
+    padding: 40px 0 40px 0;
   }
+
+  .consultation,
+  .carousel {
+    padding-top: 40px;
+    padding-bottom: 35px;
+  }
+}
+@media (max-width: 991px) {
+  .container {
+    padding: 0 3% 0 3%;
+  }
+
   .promo {
+    padding-bottom: 40px;
     &__wrapper {
-      padding: 3%;
       margin-top: 20px;
       padding-bottom: 0px;
     }
@@ -18,8 +30,17 @@
       margin-top: 40px;
     }
   }
-  .advantages {
-    padding: 40px 0 40px 0;
+
+  .consultation {
+    &__desc {
+      margin-top: 40px;
+    }
+  }
+
+  .carousel {
+    &__block {
+      width: 80%;
+    }
   }
 }
 
@@ -29,9 +50,7 @@
       font-size: 16px;
     }
   }
-  .promo {
-    padding: 3%;
-  }
+
   .advantages {
     padding: 30px 5px 30px 5px;
     &__wrapper {
@@ -39,6 +58,28 @@
     }
     &__item {
       max-width: 180px;
+    }
+  }
+  .carousel__button {
+    display: none;
+  }
+
+  .tns-nav {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    button {
+      width: 40px;
+      margin-right: 5px;
+      background-color: rgb(179, 213, 129);
+      &:hover {
+        background-color: red;
+      }
+    }
+
+    .tns-nav-active {
+      background-color: rgb(236, 163, 163);
     }
   }
 }
@@ -56,13 +97,14 @@
     }
   }
   .promo {
+    padding-bottom: 20px;
     &__header {
       text-align: end;
       font-size: 34px;
     }
     &__subheader {
-        margin-top: 0;
-        text-align: end;
+      margin-top: 0;
+      text-align: end;
     }
     &__icon {
       width: 90px;
@@ -94,5 +136,9 @@
     &__descr {
       margin-top: 5px;
     }
+  }
+
+  .feed-form {
+    width: 280px;
   }
 }

@@ -6,9 +6,12 @@
 }
 
 .container {
+  position: relative;
   max-width: 950px;
   margin: 0 auto;
+  border: 1px solid red;
 }
+
 
 @import "block/promo";
 @import "block/header";
@@ -17,5 +20,6 @@
 @import "block/advantages";
 @import "block/consultation";
 @import "block/forms";
+@import "block/carousel";
 
 @import "media/media";
