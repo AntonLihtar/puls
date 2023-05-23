@@ -93,9 +93,31 @@
             background-color: rgb(236, 163, 163);
         }
     }
+
+    .reviews {
+        margin-bottom: 40px;
+        &__block {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &-content {
+            margin: 3%;
+
+            &__title,
+            &__subtitle,
+            &__text {
+                text-align: center;
+            }
+        }
+    }
 }
 
 @media (max-width: 575px) {
+    h2.title {
+        font-size: 24px;
+    }
+
     .header {
         padding: 0;
         flex-direction: column;
@@ -169,8 +191,9 @@
         &__tabs {
             margin-top: 20px;
             flex-direction: column;
-            
+
         }
+
         &__tab {
             margin-bottom: 10px;
         }
